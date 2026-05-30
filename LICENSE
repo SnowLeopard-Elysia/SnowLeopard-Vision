@@ -1,0 +1,39 @@
+SnowLeopard Vision Personal Freeware License
+
+Copyright (c) 2026 SnowLeopard-Elysia
+
+SnowLeopard Vision is provided free of charge for personal use, learning,
+testing, and non-commercial redistribution.
+
+You may:
+- use all features of the software for free;
+- redistribute the original unmodified installer, portable package, website
+  link, and release link for free;
+- study the publicly available project files for learning and security review.
+
+You may not, without prior written permission from the author:
+- sell, rent, resell, or otherwise charge money for SnowLeopard Vision;
+- bundle SnowLeopard Vision into paid products, paid courses, paid resource
+  packs, or paid download services;
+- remove, obscure, or replace the author attribution, donation notice, version
+  information, or copyright notice;
+- publish a modified version under another author name or in a way that may
+  mislead users about the original author;
+- use the project name, website, icons, screenshots, or package files to
+  impersonate the original project.
+
+Third-party components used or invoked by this project, including but not
+limited to FFmpeg, Real-ESRGAN, RIFE/rife-ncnn-vulkan, ncnn, and Vulkan, remain
+under their respective licenses and copyrights. This license only applies to the
+SnowLeopard Vision application, website, packaging, and original project files.
+
+Users are responsible for ensuring they have the legal right to process,
+modify, export, and publish any input media. AI upscaling and frame
+interpolation do not change the copyright ownership of the original material.
+
+This software is provided "as is", without warranty of any kind. The author is
+not responsible for any illegal use, copyright infringement, data loss, hardware
+damage, or other consequences caused by use of the software.
+
+Author: SnowLeopard-Elysia
+Contact QQ: 767411754
