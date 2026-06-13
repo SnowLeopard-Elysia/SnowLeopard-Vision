@@ -3,192 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SnowLeopard Vision V1.2</title>
+  <meta name="theme-color" content="#19201c">
+  <title>SnowLeopard Vision V1.3</title>
   <link rel="icon" href="assets/favicon.ico">
   <style>
-    :root {
-      --bg: #f3efe7;
-      --panel: #fffaf0;
-      --ink: #221f19;
-      --muted: #71695c;
-      --gold: #b28a45;
-      --gold-dark: #7b5a24;
-      --line: #ddcfb4;
-      --green: #52675c;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: "Inter", "Microsoft YaHei UI", system-ui, sans-serif;
-      background: radial-gradient(circle at top left, #fff9ed 0, var(--bg) 38%, #e8e3da 100%);
-      color: var(--ink);
-    }
-    header {
-      min-height: 92vh;
-      padding: 36px clamp(22px, 5vw, 72px);
-      display: grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap: 44px;
-      align-items: center;
-    }
-    nav {
-      position: fixed;
-      inset: 0 0 auto 0;
-      z-index: 2;
-      height: 66px;
-      padding: 0 clamp(22px, 5vw, 72px);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: rgba(243, 239, 231, .82);
-      backdrop-filter: blur(18px);
-      border-bottom: 1px solid rgba(178, 138, 69, .18);
-    }
-    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; }
-    .brand img { width: 36px; height: 36px; border-radius: 10px; }
-    .navlinks { display: flex; gap: 18px; font-size: 14px; }
-    .navlinks a { color: var(--muted); text-decoration: none; }
-    .hero { padding-top: 66px; }
-    .eyebrow { color: var(--gold-dark); font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
-    h1 { font-size: clamp(42px, 6vw, 78px); line-height: .96; margin: 18px 0; letter-spacing: -0.03em; }
-    .lead { font-size: clamp(17px, 2vw, 21px); line-height: 1.8; color: var(--muted); max-width: 720px; }
-    .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 48px;
-      padding: 0 22px;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 800;
-      border: 1px solid var(--line);
-      color: var(--ink);
-      background: rgba(255, 250, 240, .72);
-    }
-    .btn.primary { background: linear-gradient(135deg, #caa35a, #806027); color: white; border: none; }
-    .cover {
-      width: min(430px, 100%);
-      justify-self: center;
-      border-radius: 34px;
-      box-shadow: 0 34px 90px rgba(62, 48, 26, .24);
-      border: 1px solid rgba(255,255,255,.72);
-    }
-    section { padding: 72px clamp(22px, 5vw, 72px); }
-    .section-title { font-size: clamp(28px, 4vw, 44px); margin: 0 0 18px; }
-    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-    .card {
-      background: rgba(255,250,240,.76);
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      padding: 24px;
-      box-shadow: 0 18px 60px rgba(58,45,24,.08);
-    }
-    .card h3 { margin: 0 0 10px; }
-    .card p { margin: 0; color: var(--muted); line-height: 1.7; }
-    .samples { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 28px; }
-    .sample img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 22px; border: 1px solid var(--line); }
-    .sample strong { display: block; margin-top: 12px; }
-    .download-panel {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-      margin-top: 28px;
-    }
-    footer { padding: 34px clamp(22px, 5vw, 72px); color: var(--muted); border-top: 1px solid var(--line); }
-    @media (max-width: 900px) {
-      header, .download-panel { grid-template-columns: 1fr; }
-      .grid, .samples { grid-template-columns: 1fr; }
-      .navlinks { display: none; }
-      header { padding-top: 96px; }
-    }
+    :root{--workspace:#eef1ed;--panel:#fcfcf9;--nav:#19201c;--nav-soft:#26312b;--accent:#3f5f50;--accent-dark:#304b3e;--gold:#9b7438;--gold-soft:#eee6d8;--text:#1d241f;--muted:#657069;--border:#d6ddd7;--shadow:0 18px 44px rgba(27,38,31,.09);--radius-panel:12px;--radius-control:8px;--content:1180px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);background:var(--workspace);font-family:"Segoe UI Variable","Microsoft YaHei UI",system-ui,sans-serif;line-height:1.7}img{max-width:100%;display:block}a{color:inherit}:focus-visible{outline:3px solid rgba(155,116,56,.42);outline-offset:3px}.wrap{width:min(var(--content),calc(100% - 40px));margin:0 auto}
+    .site-nav{position:sticky;top:0;z-index:20;background:rgba(25,32,28,.96);border-bottom:1px solid rgba(255,255,255,.08)}.nav-inner{min-height:64px;display:flex;align-items:center;gap:28px}.brand{display:flex;align-items:center;gap:11px;color:#f4f3ed;text-decoration:none;font-weight:750}.brand img{width:34px;height:34px;border-radius:8px;object-fit:cover}.brand small{color:#aeb8b1;font-weight:500}.nav-links{margin-left:auto;display:flex;gap:22px}.nav-links a{color:#cbd3cd;text-decoration:none;font-size:14px}.nav-links a:hover{color:#fff}
+    .button{min-height:44px;padding:0 18px;border:1px solid var(--border);border-radius:var(--radius-control);display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:700;background:var(--panel);transition:transform .18s ease,background .18s ease,border-color .18s ease}.button:hover{transform:translateY(-1px);border-color:#aebcb1}.button.primary{color:#fff;background:var(--accent);border-color:var(--accent)}.button.primary:hover{background:var(--accent-dark)}
+    .hero{min-height:calc(100vh - 64px);max-height:860px;display:grid;align-items:center;position:relative;overflow:hidden;background:linear-gradient(135deg,#111813 0%,#1a241e 54%,#26342c 100%)}.hero:before{content:"";position:absolute;inset:22px;border:1px solid rgba(216,192,142,.14);border-radius:18px;pointer-events:none}.hero:after{content:"SLV";position:absolute;right:max(4vw,32px);bottom:-.18em;color:rgba(255,255,255,.025);font-size:min(42vw,560px);font-weight:800;line-height:1;letter-spacing:0;pointer-events:none}.hero-content{position:relative;z-index:1;max-width:760px;padding:72px 0 92px;color:#fff}.version,.kicker{color:#d9c08e;font-size:13px;font-weight:800;letter-spacing:0}.kicker{color:var(--gold);margin:0 0 8px}h1{margin:12px 0 18px;font-size:clamp(42px,7vw,76px);line-height:1.05;letter-spacing:0}.hero p{color:#d5ddd7;font-size:18px;max-width:650px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.hero .button:not(.primary){color:#fff;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.22)}.trust-row{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:30px;color:#bfc9c2;font-size:13px}.trust-row span:before{content:"•";color:#d1ad68;margin-right:8px}
+    section{padding:82px 0}.section-head{max-width:740px;margin-bottom:34px}h2{margin:0 0 12px;font-size:clamp(30px,4vw,44px);line-height:1.18;letter-spacing:0}h3{margin:0 0 8px;font-size:18px}.muted,.step p,.feature p,.download-item p{color:var(--muted)}.workflow,.samples{background:var(--panel);border-bottom:1px solid var(--border)}.steps{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border);border-radius:var(--radius-panel);overflow:hidden}.step{padding:24px;border-right:1px solid var(--border);background:#f8faf7}.step:last-child{border-right:0}.step-number{display:block;width:28px;height:28px;border-radius:7px;margin-bottom:18px;color:#fff;background:var(--accent);text-align:center;line-height:28px;font-weight:800}.step p,.feature p,.download-item p{margin:0}
+    .feature-band{display:grid;grid-template-columns:.82fr 1.18fr;gap:42px;align-items:start;padding:34px 0;border-top:1px solid var(--border)}.feature-band:last-child{border-bottom:1px solid var(--border)}.feature-label{display:flex;gap:14px;align-items:flex-start}.feature-mark{width:36px;height:36px;flex:none;border-radius:8px;display:grid;place-items:center;background:var(--gold-soft);color:var(--gold);font-weight:800}.feature-details{display:grid;grid-template-columns:1fr 1fr;gap:18px}.feature{padding-left:16px;border-left:2px solid #ced9d1}
+    .release-notes{background:#e2e8e3}.release-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.release-item{padding:24px;background:rgba(252,252,249,.86);border:1px solid #cbd6ce;border-radius:var(--radius-panel);box-shadow:0 12px 32px rgba(27,38,31,.06)}.release-item strong{display:block;margin-bottom:7px;color:var(--text);font-size:17px}.release-item p{margin:0;color:var(--muted)}
+    .sample button{appearance:none;border:0;padding:0;width:100%;background:transparent;cursor:zoom-in}figcaption{padding:16px 18px 18px;color:var(--muted);font-size:14px}figcaption strong{color:var(--text);display:block;font-size:16px;margin-bottom:3px}
+    .sample-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}.sample{margin:0;border-bottom:1px solid var(--border)}.sample img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--radius-control);border:1px solid var(--border)}.sample figcaption{padding-left:0}
+    .download{background:var(--nav);color:#fff}.download .muted{color:#b8c4bc}.download-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.download-item{padding:24px;border:1px solid rgba(255,255,255,.14);border-radius:var(--radius-panel);background:var(--nav-soft)}.download-item p{color:#b8c4bc;margin-bottom:18px}.download-item .button:not(.primary){color:#f5f7f5;background:#35443c;border-color:#56685e}.download-item .button:not(.primary):hover{color:#fff;background:#405349;border-color:#718579}.support{background:#e7ece8}.support-grid{display:grid;grid-template-columns:1fr 320px;gap:56px;align-items:center}.support-copy{max-width:680px}.support-qr{margin:0;padding:18px;background:var(--panel);border:1px solid #d2d9d3;border-radius:var(--radius-panel);box-shadow:var(--shadow)}.support-qr img{width:100%;border-radius:var(--radius-control)}.support-qr figcaption{padding:12px 0 0}.notice-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px}footer{padding:28px 0;border-top:1px solid var(--border);color:var(--muted);font-size:13px}
+    dialog{width:min(1200px,calc(100% - 28px));border:0;border-radius:var(--radius-panel);padding:12px;background:var(--panel);box-shadow:0 24px 90px rgba(0,0,0,.28)}dialog::backdrop{background:rgba(13,18,15,.82)}dialog img{max-height:calc(100vh - 90px);margin:auto}.dialog-close{float:right;margin-bottom:8px;border:1px solid var(--border);border-radius:7px;padding:7px 11px;background:#fff;cursor:pointer}
+    @media(max-width:1000px){.steps{grid-template-columns:1fr 1fr}.step:nth-child(2){border-right:0}.step:nth-child(-n+2){border-bottom:1px solid var(--border)}.feature-band,.release-grid,.support-grid{grid-template-columns:1fr}.support-qr{width:min(320px,100%)}}
+    @media(max-width:720px){.wrap{width:min(100% - 28px,var(--content))}.nav-links{display:none}.brand small{display:none}.hero{min-height:720px}.hero:after{background:rgba(18,25,21,.82)}.hero-content{padding:54px 0 72px}h1{font-size:42px;overflow-wrap:anywhere}section{padding:60px 0}.steps,.feature-details,.sample-row,.download-grid,.notice-grid{grid-template-columns:1fr}.step{border-right:0;border-bottom:1px solid var(--border)}.step:last-child{border-bottom:0}.hero-actions .button{width:100%}}
   </style>
 </head>
 <body>
-  <nav>
-    <div class="brand"><img src="assets/app-cover.jpg" alt="SnowLeopard Vision 图标"> SnowLeopard Vision</div>
-    <div class="navlinks">
-      <a href="#features">功能</a>
-      <a href="#updates">更新</a>
-      <a href="#samples">示例</a>
-      <a href="#download">下载</a>
-      <a href="#notice">声明</a>
-    </div>
-  </nav>
-
-  <header>
-    <div class="hero">
-      <div class="eyebrow">V1.2 · Local AI Video Toolkit</div>
-      <h1>SnowLeopard Vision</h1>
-      <p class="lead">雪豹视觉是一款免费的本地 AI 图片/视频增强工具，集成图片超分、视频超分、视频补帧、超分并补帧流程。为零基础人员设计，内置一键准备环境，支持 NVIDIA GPU 加速。</p>
-      <div class="actions">
-        <a class="btn primary" href="https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases/download/V1.2/SnowLeopard-Vision-V1.2-Setup.exe">下载安装包</a>
-        <a class="btn" href="https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases/download/V1.2/SnowLeopard-Vision-V1.2-Portable.zip">下载压缩包</a>
-      </div>
-    </div>
-    <img class="cover" src="assets/app-cover.jpg" alt="SnowLeopard Vision 应用封面">
-  </header>
-
-  <section id="features">
-    <h2 class="section-title">核心功能</h2>
-    <div class="grid">
-      <div class="card"><h3>图片超分</h3><p>提升原图分辨率，让低清图片、截图、封面、插画获得更高尺寸和更清晰的观感。适合想把小图变清楚、放大后仍尽量保留线条和细节的场景。</p></div>
-      <div class="card"><h3>视频超分</h3><p>把视频逐帧进行 AI 清晰度增强，再重新合成为更高分辨率的视频。x4plus 系列模型仅使用 4x 原生倍率，2x / 3x 推荐使用兼容性更好的 animevideov3。</p></div>
-      <div class="card"><h3>视频补帧</h3><p>在原有视频帧之间生成真实中间帧，提高视频帧率和运动流畅度。它不是简单修改帧率标签，而是实际增加画面帧数，让动作、镜头移动看起来更顺滑。</p></div>
-      <div class="card"><h3>一键环境</h3><p>自动式安装并配置所需组件，包括 FFmpeg、Real-ESRGAN 和 RIFE。零基础用户无需手动找工具、配路径或理解命令行，打开应用后按提示准备环境即可使用。</p></div>
-    </div>
-  </section>
-
-  <section id="updates">
-    <h2 class="section-title">V1.2 更新说明</h2>
-    <div class="card">
-      <h3>更稳定、可诊断的 NVIDIA NVENC 编码</h3>
-      <p>V1.2 针对部分 NVIDIA 显卡在视频最终合成阶段无法使用 NVENC 的问题进行了重点修复。应用改用稳定发行版 FFmpeg 8.1.1，并在处理前使用真实目标分辨率执行连续多帧 NVENC 预检。</p>
-      <p>开启 NVENC 后，视频编码不会自动切换到 CPU。软件会尝试多种纯 NVENC 兼容方案；AI 高负载后如果编码器暂时无法初始化，还会等待驱动恢复并重新建立 NVENC 会话。</p>
-      <p>同时修复了 GUI 后台任务链和日志传递稳定性，并在诊断日志中记录 GPU、驱动、显存和编码器利用率，便于定位不同电脑上的环境问题。</p>
-    </div>
-  </section>
-
-  <section id="samples">
-    <h2 class="section-title">超分示例</h2>
-    <p class="lead">以下两组图片展示原图、2 倍超分和 4 倍超分的差异。网页会缩放图片，放大图片或下载以查看实际效果。</p>
-    <div class="samples">
-      <div class="sample"><img src="assets/sample-original.jpeg" alt="原始示例图"><strong>原图</strong></div>
-      <div class="sample"><img src="assets/sample-ai2x.png" alt="2倍超分示例图"><strong>2x AI 超分</strong></div>
-      <div class="sample"><img src="assets/sample-ai4x.png" alt="4倍超分示例图"><strong>4x AI 超分</strong></div>
-    </div>
-    <div class="samples">
-      <div class="sample"><img src="assets/sample2-original.jpg" alt="第二组原始示例图"><strong>原图</strong></div>
-      <div class="sample"><img src="assets/sample2-ai2x.png" alt="第二组2倍超分示例图"><strong>2x AI 超分</strong></div>
-      <div class="sample"><img src="assets/sample2-ai4x.png" alt="第二组4倍超分示例图"><strong>4x AI 超分</strong></div>
-    </div>
-  </section>
-
-  <section id="download">
-    <h2 class="section-title">下载 SnowLeopard Vision V1.2</h2>
-    <div class="download-panel">
-      <div class="card">
-        <h3>安装包</h3>
-        <p>标准安装方式，带安装向导，可选择安装位置并创建桌面快捷方式。</p>
-        <div class="actions"><a class="btn primary" href="https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases/download/V1.2/SnowLeopard-Vision-V1.2-Setup.exe">下载雪豹视觉 V1.2</a></div>
-      </div>
-      <div class="card">
-        <h3>压缩包</h3>
-        <p>免安装版本，解压后即可运行，适合放在移动硬盘或自定义文件夹中使用。</p>
-        <div class="actions"><a class="btn" href="https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases/download/V1.2/SnowLeopard-Vision-V1.2-Portable.zip">下载雪豹视觉 V1.2 压缩包</a></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="notice">
-    <h2 class="section-title">使用与合规声明</h2>
-    <div class="card">
-      <p>该应用由雪豹·Elysia独立开发，可以转载，但请勿收费。有 BUG 可以反馈给作者，联系方式 QQ：767411754。</p>
-      <p>SnowLeopard Vision 允许免费使用和非商业转载原始安装包、压缩包、官网链接与 GitHub Release 链接。未经作者书面许可，禁止收费销售、捆绑售卖、冒充作者发布、移除作者署名或替换版权声明。</p>
-      <p>本工具只提供本地 AI 增强流程，不提供素材，不破解版权保护，不内置影视资源。用户需确保输入素材拥有合法处理、修改、导出和发布权限。</p>
-    </div>
-  </section>
-
-  <footer>© SnowLeopard Vision V1.2 · Free local AI enhancement toolkit.</footer>
+  <nav class="site-nav"><div class="nav-inner wrap"><a class="brand" href="#top"><img src="assets/app-cover.jpg" alt=""><span>SnowLeopard Vision</span><small>V1.3</small></a><div class="nav-links"><a href="#workflow">使用流程</a><a href="#features">功能</a><a href="#updates">更新说明</a><a href="#samples">示例</a><a href="#download">下载</a><a href="#support">支持作者</a><a href="#notice">声明</a></div></div></nav>
+  <header class="hero" id="top"><div class="hero-content wrap"><div class="version">SNOWLEOPARD VISION · V1.3</div><h1>SnowLeopard Vision</h1><p>为零基础用户设计的本地 AI 图片与视频增强工具。选择素材、确认设置、开始处理，清晰度与流畅度提升过程始终可见。</p><div class="hero-actions"><a class="button primary" href="#download">下载 V1.3</a><a class="button" href="#workflow">了解使用流程</a></div><div class="trust-row"><span>图片与视频均在本地处理</span><span>自动识别 NVIDIA 独显</span><span>持续显示总进度与当前阶段</span></div></div></header>
+  <section class="workflow" id="workflow"><div class="wrap"><div class="section-head"><p class="kicker">从素材到成品</p><h2>零基础也能看懂的处理流程</h2><p class="muted">应用会明确告诉你环境是否准备完成、正在使用哪张显卡，以及当前处理到哪一步。</p></div><div class="steps"><article class="step"><span class="step-number">1</span><h3>选择素材</h3><p>拖入图片、视频或文件夹，输出目录和文件名自动生成。</p></article><article class="step"><span class="step-number">2</span><h3>选择任务</h3><p>根据需要选择图片超分、视频超分、视频补帧或超分并补帧。</p></article><article class="step"><span class="step-number">3</span><h3>确认设置</h3><p>自动检测运行环境与 NVIDIA 设备，常用参数提供易懂说明。</p></article><article class="step"><span class="step-number">4</span><h3>跟踪结果</h3><p>查看总进度和当前阶段；失败时可复制日志或导出诊断信息。</p></article></div></div></section>
+  <section id="features"><div class="wrap"><div class="section-head"><p class="kicker">四种核心任务</p><h2>不仅改变文件标签，而是真实处理画面</h2></div><div class="feature-band"><div class="feature-label"><span class="feature-mark">01</span><div><h3>清晰度提升</h3><p class="muted">使用 Real-ESRGAN 对图像内容进行 AI 重建。</p></div></div><div class="feature-details"><article class="feature"><h3>图片超分</h3><p>提高原图分辨率并增强可见细节，适合截图、插画、封面与低分辨率图片。</p></article><article class="feature"><h3>视频超分</h3><p>逐帧增强视频画面，再重新合成为更高分辨率的视频文件。</p></article></div></div><div class="feature-band"><div class="feature-label"><span class="feature-mark">02</span><div><h3>流畅度提升</h3><p class="muted">真实生成中间帧，而不是只修改显示帧率。</p></div></div><div class="feature-details"><article class="feature"><h3>视频补帧</h3><p>通过 RIFE 或兼容补帧方案生成中间帧，让动作和镜头移动更加顺滑。</p></article><article class="feature"><h3>超分并补帧</h3><p>先提升清晰度，再生成中间帧，一次完成分辨率与流畅度增强。</p></article></div></div></div></section>
+  <section class="release-notes" id="updates"><div class="wrap"><div class="section-head"><p class="kicker">V1.3 更新说明</p><h2>更可靠的设备识别与更成熟的使用体验</h2><p class="muted">本次更新围绕显卡兼容性、任务反馈、环境安全与界面质感进行集中优化。</p></div><div class="release-grid"><article class="release-item"><strong>自动识别 NVIDIA 独显</strong><p>AI 处理与 NVENC 编码分别检测并选择可用设备，减少误用核显和编码失败。</p></article><article class="release-item"><strong>真实总进度与当前阶段</strong><p>进度页聚焦真实处理状态，清晰展示总进度、当前阶段进度与详细日志。</p></article><article class="release-item"><strong>更安全的一键环境准备</strong><p>增加下载校验、压缩包路径保护与中断恢复，降低环境配置失败的风险。</p></article><article class="release-item"><strong>界面与兼容性优化</strong><p>改善深色模式可读性、滚动条、控件状态和小窗口表现，整体视觉更加成熟。</p></article></div></div></section>
+  <section class="samples" id="samples"><div class="wrap"><div class="section-head"><p class="kicker">真实图片示例</p><h2>查看 2 倍与 4 倍超分效果</h2><p class="muted">网页会缩放图片，放大图片或下载以查看实际效果。</p></div><div class="sample-row"><figure class="sample"><button data-lightbox="assets/sample-original.jpeg"><img src="assets/sample-original.jpeg" alt="第一组原图"></button><figcaption><strong>原图</strong></figcaption></figure><figure class="sample"><button data-lightbox="assets/sample-ai2x.png"><img src="assets/sample-ai2x.png" alt="第一组 2 倍超分"></button><figcaption><strong>2x AI 超分</strong></figcaption></figure><figure class="sample"><button data-lightbox="assets/sample-ai4x.png"><img src="assets/sample-ai4x.png" alt="第一组 4 倍超分"></button><figcaption><strong>4x AI 超分</strong></figcaption></figure></div><div class="sample-row"><figure class="sample"><button data-lightbox="assets/sample2-original.jpg"><img src="assets/sample2-original.jpg" alt="第二组原图"></button><figcaption><strong>原图</strong></figcaption></figure><figure class="sample"><button data-lightbox="assets/sample2-ai2x.png"><img src="assets/sample2-ai2x.png" alt="第二组 2 倍超分"></button><figcaption><strong>2x AI 超分</strong></figcaption></figure><figure class="sample"><button data-lightbox="assets/sample2-ai4x.png"><img src="assets/sample2-ai4x.png" alt="第二组 4 倍超分"></button><figcaption><strong>4x AI 超分</strong></figcaption></figure></div></div></section>
+  <section class="download" id="download"><div class="wrap"><div class="section-head"><p class="kicker">当前版本</p><h2>下载 SnowLeopard Vision V1.3</h2><p class="muted">根据使用方式选择安装版或免安装压缩包，功能保持一致。</p></div><div class="download-grid"><article class="download-item"><h3>安装版</h3><p>带安装向导，可选择安装位置并创建桌面快捷方式。</p><a class="button primary" href="https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases/download/V1.3/SnowLeopard-Vision-V1.3-Setup.exe">下载安装版 V1.3</a></article><article class="download-item"><h3>免安装压缩包</h3><p>解压后即可运行，可放在自定义文件夹或移动硬盘中。</p><a class="button" href="https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases/download/V1.3/SnowLeopard-Vision-V1.3-Portable.zip">下载压缩包 V1.3</a></article></div></div></section>
+  <section class="support" id="support"><div class="wrap support-grid"><div class="support-copy"><p class="kicker">支持作者</p><h2>支持后续开发与维护</h2><p class="muted">SnowLeopard Vision 由雪豹·Elysia 独立开发，软件功能免费使用。如果它确实帮助到了你，可以自愿支持后续功能开发、兼容性优化与维护。所有支持均为自愿，不影响软件功能使用。</p></div><figure class="support-qr"><img src="assets/donation-qr.jpg" alt="支持作者付款码"><figcaption><strong>自愿支持作者</strong>感谢每一份对独立开发的认可。</figcaption></figure></div></section>
+  <section id="notice"><div class="wrap notice-grid"><div><p class="kicker">使用声明</p><h2>免费使用，尊重素材版权</h2><p class="muted">SnowLeopard Vision 由雪豹·Elysia 独立开发。用户必须确保输入素材拥有合法的处理、修改、导出和发布权限。AI 增强不会改变原素材版权归属。</p></div><div><p class="kicker">Third-party notices</p><p class="muted">本工具调用 FFmpeg、Real-ESRGAN、RIFE / rife-ncnn-vulkan 与 ncnn。相关项目及模型版权归各自作者所有。本工具不提供素材、不破解版权保护、不内置影视资源，也不构成法律意见。</p></div></div></section>
+  <footer><div class="wrap">© SnowLeopard Vision · V1.3 · 雪豹·Elysia 独立开发</div></footer>
+  <dialog id="lightbox"><button class="dialog-close" type="button">关闭</button><img alt="放大预览"></dialog>
+  <script>const dialog=document.querySelector("#lightbox"),preview=dialog.querySelector("img");document.querySelectorAll("[data-lightbox]").forEach(button=>button.addEventListener("click",()=>{preview.src=button.dataset.lightbox;preview.alt=button.querySelector("img").alt;dialog.showModal()}));dialog.querySelector(".dialog-close").addEventListener("click",()=>dialog.close());dialog.addEventListener("click",event=>{if(event.target===dialog)dialog.close()});</script>
 </body>
 </html>
