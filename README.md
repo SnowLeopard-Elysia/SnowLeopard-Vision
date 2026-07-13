@@ -2,20 +2,20 @@
 
 SnowLeopard Vision 是一款本地 AI 图片与视频增强工具，支持图片超分、视频超分、视频补帧、超分并补帧。
 
-当前版本：V1.6
+当前版本：V1.7
 
 - [访问官方网站](https://snowleopard-elysia.github.io/SnowLeopard-Vision/)
-- [下载当前版本 V1.6](https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases/tag/V1.6)
+- [下载当前版本 V1.7](https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases/tag/V1.7)
 - [查看全部版本与历史下载](https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases)
 
-## V1.6 更新
+## V1.7 更新
 
-- 增加补帧算法与模型版本选择，开放当前内置的 RIFE 多版本入口。
-- 支持多个文件或文件夹加入批量队列，每个素材独立输出。
-- 增加阶段暂停与断点续跑能力，减少中断后重复处理。
-- 新增转场保护选项，降低硬切镜头附近的融合、鬼影和错帧。
-- 优化批量队列视觉与滚动体验，减少界面挤压和显示不全。
-- 公告与反馈联系方式改为群聊：1036589217。
+- 修复超长文件名在最大化、还原和连续缩放窗口后挤压界面的问题。
+- 新增源文件、输出目录、工具、模型、写入权限和临时空间预检。
+- Real-ESRGAN 与 RIFE 改为分块处理，支持更可靠的暂停与断点续跑。
+- 队列项目独立保存完整参数，队列与断点文件采用原子写入。
+- 新增图片黑图检测，并精确校验视频分辨率、帧率、帧数、时长、画面与音轨。
+- 转场保护改用 FFmpeg scdet，失败信息与诊断入口更加完整。
 
 ## 仓库说明
 
