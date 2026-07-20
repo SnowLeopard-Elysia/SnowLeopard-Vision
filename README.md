@@ -2,20 +2,21 @@
 
 SnowLeopard Vision 是一款本地 AI 图片与视频增强工具，支持图片超分、视频超分、视频补帧、超分并补帧。
 
-当前版本：V1.7
+当前版本：V1.8
 
 - [访问官方网站](https://snowleopard-elysia.github.io/SnowLeopard-Vision/)
-- [下载当前版本 V1.7](https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases/tag/V1.7)
+- [下载当前版本 V1.8](https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases/tag/V1.8)
 - [查看全部版本与历史下载](https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases)
 
-## V1.7 更新
+## V1.8 更新
 
-- 修复超长文件名在最大化、还原和连续缩放窗口后挤压界面的问题。
-- 新增源文件、输出目录、工具、模型、写入权限和临时空间预检。
-- Real-ESRGAN 与 RIFE 改为分块处理，支持更可靠的暂停与断点续跑。
-- 队列项目独立保存完整参数，队列与断点文件采用原子写入。
-- 新增图片黑图检测，并精确校验视频分辨率、帧率、帧数、时长、画面与音轨。
-- 转场保护改用 FFmpeg scdet，失败信息与诊断入口更加完整。
+- 修复滚动设置页面时误触模型、倍率、帧率、显卡和高级数值的问题。
+- 工具路径改为稳定持久化，有效的手动或内置路径不会再被 Scoop 覆盖。
+- 修复短音轨截断视频末尾帧，并改善小幅帧数偏差的校验逻辑。
+- NVENC 增加基础环境与目标分辨率两级预检，失败原因更加清晰。
+- 增强 MKV、AV1 和多种音轨兼容，不适合 MP4 的音轨可按需转换为 AAC。
+- 增加 RIFE Vulkan 致命错误、显存分配失败和交替黑帧保护。
+- 临时空间提示明确说明占用来自处理期间的图片帧，成功后会自动删除。
 
 ## 仓库说明
 
