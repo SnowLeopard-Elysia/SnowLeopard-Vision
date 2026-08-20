@@ -2,20 +2,21 @@
 
 SnowLeopard Vision 是一款本地 AI 图片与视频增强工具，支持图片超分、视频超分、视频补帧、超分并补帧。
 
-当前版本：V1.9
+当前版本：V2.0
 
 - [访问官方网站](https://snowleopard-elysia.github.io/SnowLeopard-Vision/)
-- [下载当前版本 V1.9](https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases/tag/V1.9)
+- [下载当前版本 V2.0](https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases/tag/V2.0)
 - [查看全部版本与历史下载](https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases)
 
-## V1.9 更新
+## V2.0 更新
 
-- 更新 RIFE 处理后端并完善 Vulkan 异常识别，改善部分设备上的中断与兼容性问题。
-- 重做断点续跑机制，任务暂停、软件关闭或异常中断后可继续处理，无需从头开始。
-- 暂停任务可即时保留断点；终止任务会结束处理并清理本任务产生的临时图片文件。
-- 从准备、拆帧、AI 处理、补帧、整理、合成到校验均提供持续的阶段状态与进度反馈。
-- 使用新的 TypeScript 桌面界面重构视觉与交互，改善布局、响应速度和操作反馈。
-- 改进补帧后的音视频时间轴处理，并增强转场检测与保护范围。
+- 更新界面并新增设置板块，可自由调节界面颜色风格。
+- 新增 Anime4K、Real-CUGAN 模型，以及 RIFE 4.25、RIFE 4.26，提供更多超分与补帧选择。
+- 优化长视频任务链，明显降低处理时所需的临时磁盘空间。
+- 新增性能档位，可根据显卡性能自由调节。
+- 新增 AMD AMF 编码，修复 NVENC 报错问题，并加入 H.265 编码器与 10-bit 输出。
+- 再次优化进度反馈，任务状态更加直观。
+- 新增实验性去重功能，并优化处理设置板块。
 
 ## 仓库说明
 
