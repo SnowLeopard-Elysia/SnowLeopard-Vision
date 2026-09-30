@@ -9,22 +9,20 @@
 
 SnowLeopard Vision 是一款本地 AI 图片与视频增强工具，支持图片超分、视频超分、视频补帧、超分并补帧。
 
-当前版本：V2.1
+当前版本：V2.2
 
 - [访问官方网站](https://snowleopard-elysia.github.io/SnowLeopard-Vision/)
-- [迅雷网盘下载 V2.1](https://pan.xunlei.com/s/VP1AcJPjuJOYYaWhWNNcX-HxA1?pwd=vvtq)
-- [夸克网盘下载 V2.1](https://pan.quark.cn/s/78e8210cc964)
-- [百度网盘下载 V2.1](https://pan.baidu.com/s/1dOnRXQl9InO0DvpqQdnxbA?pwd=uvuj)
+- [夸克网盘下载 V2.2（推荐）](https://pan.quark.cn/s/b8e5c1927103)
+- [迅雷网盘下载 V2.2](https://pan.xunlei.com/s/VP2ksOp7GTrAlEVfHLVV9nYJA1?pwd=6ib2)
+- [百度网盘下载 V2.2](https://pan.baidu.com/s/13zT_MN7KdZKcjDZe3gMGeg?pwd=stbj)
 
-## V2.1 更新
+## V2.2 更新
 
-- 修复窗口拉伸、设置展开和最大化时的 UI 问题，并新增玻璃质感风格。
-- 新增视频与图片格式转换功能。
-- 新增极速模式，提升显卡利用率和处理速度。
-- 新增超分尺寸、补帧帧率和单素材文件名自定义功能。
-- 去除图片约 1.78 亿像素的固定限制。
-- 优化设备检测、错误提示和任务校验，减少误报与异常失败。
-- 在“支持 SLV”板块中新增官方网站和 GitHub 入口。
+- 新增 GPU 性能测试：支持 DirectX 12、Vulkan 和 1080P／2K／4K 三档分辨率，包含三个实时渲染场景，提供总分、分项成绩及帧率数据。
+- 完善视频输出设置：编码选项移至基础设置，新增 AV1、受支持路径的 HDR 输出，以及超分补帧的 MP4／MKV／MOV 格式选择，并补充用途与兼容性说明。RIFE 补帧暂不支持 HDR 输出。
+- 增强素材兼容与恢复能力：改善多音轨、字幕和章节保留，增加处理前的兼容提示；最终合成失败后可调整格式重新合并，无需重复 AI 处理。
+- 优化补帧与处理稳定性：自动选择优先推荐 RIFE 4.26，改进自定义 60 FPS、可变帧率素材、分段拼接、音画同步及色彩处理。
+- 优化界面与使用体验：新增官网更新入口，改善进度反馈、设置说明、窗口圆角、主题记忆及安装界面。
 
 ## 下载说明
 
