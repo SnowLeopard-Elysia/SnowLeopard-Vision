@@ -12,9 +12,10 @@ SnowLeopard Vision 是一款本地 AI 图片与视频增强工具，支持图片
 当前版本：V2.2
 
 - [访问官方网站](https://snowleopard-elysia.github.io/SnowLeopard-Vision/)
-- [夸克网盘下载 V2.2（推荐）](https://pan.quark.cn/s/b8e5c1927103)
-- [迅雷网盘下载 V2.2](https://pan.xunlei.com/s/VP2ksOp7GTrAlEVfHLVV9nYJA1?pwd=6ib2)
-- [百度网盘下载 V2.2](https://pan.baidu.com/s/13zT_MN7KdZKcjDZe3gMGeg?pwd=stbj)
+- [夸克网盘下载 V2.2（推荐）](https://pan.quark.cn/s/fc3c5a92736e)
+- [迅雷网盘下载 V2.2](https://pan.xunlei.com/s/VP2yty88OmHtTQK1hs7LufLEA1?pwd=rahf)
+- [百度网盘下载 V2.2](https://pan.baidu.com/s/1-dinNzs8QYUK_eWudD8xTw?pwd=i92w)
+- [GitHub 备用下载](https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases/tag/V2.2)
 
 ## V2.2 更新
 
@@ -29,6 +30,7 @@ SnowLeopard Vision 是一款本地 AI 图片与视频增强工具，支持图片
 - 安装版适合常规使用，可直接完成安装与卸载。
 - 免安装版解压后即可运行，适合便携使用或保留多个版本。
 - 国内用户也可以通过[官方网站](https://snowleopard-elysia.github.io/SnowLeopard-Vision/#download)选择夸克、迅雷或百度网盘。
+- 由于 GitHub 单文件大小限制，本次采用分卷下载；不熟悉分卷操作的用户，也可以通过网盘下载完整包。
 
 ## 仓库说明
 
