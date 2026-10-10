@@ -34,7 +34,7 @@ SnowLeopard Vision 是一款本地 AI 图片与视频增强工具，支持图片
 - 安装版适合常规使用，可直接完成安装与卸载。
 - 免安装版解压后即可运行，适合便携使用或保留多个版本。
 - 国内用户也可以通过[官方网站](https://snowleopard-elysia.github.io/SnowLeopard-Vision/#download)选择夸克、迅雷或百度网盘。
-- V2.3 的 GitHub 下载提供完整安装包与免安装压缩包，无需分卷或合并。
+- GitHub 可直接下载安装包或免安装压缩包。
 
 ## 仓库说明
 
