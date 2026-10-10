@@ -9,28 +9,32 @@
 
 SnowLeopard Vision 是一款本地 AI 图片与视频增强工具，支持图片超分、视频超分、视频补帧、超分并补帧。
 
-当前版本：V2.2
+当前版本：V2.3
 
 - [访问官方网站](https://snowleopard-elysia.github.io/SnowLeopard-Vision/)
-- [夸克网盘下载 V2.2（推荐）](https://pan.quark.cn/s/fc3c5a92736e)
-- [迅雷网盘下载 V2.2](https://pan.xunlei.com/s/VP2yty88OmHtTQK1hs7LufLEA1?pwd=rahf)
-- [百度网盘下载 V2.2](https://pan.baidu.com/s/1-dinNzs8QYUK_eWudD8xTw?pwd=i92w)
-- [GitHub 备用下载](https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases/tag/V2.2)
+- [夸克网盘下载 V2.3（推荐）](https://pan.quark.cn/s/4b1b8e06b73b)
+- [迅雷网盘下载 V2.3](https://pan.xunlei.com/s/VP3a1KAT31f4Uoe-M9WMPjBlA1?pwd=2ymt)
+- [百度网盘下载 V2.3](https://pan.baidu.com/s/1qXj-qNhLWnJbHQ3xTXcT3g?pwd=s7pe)
+- [GitHub 备用下载](https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases/tag/V2.3)
+- [历史版本](https://pan.quark.cn/s/de2aed22cddb)
 
-## V2.2 更新
+## V2.3 更新说明
 
-- 新增 GPU 性能测试：支持 DirectX 12、Vulkan 和 1080P／2K／4K 三档分辨率，包含三个实时渲染场景，提供总分、分项成绩及帧率数据。
-- 完善视频输出设置：编码选项移至基础设置，新增 AV1、受支持路径的 HDR 输出，以及超分补帧的 MP4／MKV／MOV 格式选择，并补充用途与兼容性说明。RIFE 补帧暂不支持 HDR 输出。
-- 增强素材兼容与恢复能力：改善多音轨、字幕和章节保留，增加处理前的兼容提示；最终合成失败后可调整格式重新合并，无需重复 AI 处理。
-- 优化补帧与处理稳定性：自动选择优先推荐 RIFE 4.26，改进自定义 60 FPS、可变帧率素材、分段拼接、音画同步及色彩处理。
-- 优化界面与使用体验：新增官网更新入口，改善进度反馈、设置说明、窗口圆角、主题记忆及安装界面。
+### 该版本鸣谢子贤dalao的友情赞助！
+
+- **保留字幕功能**：默认开启，也可按需关闭。兼容的文本字幕可转换为 MP4 支持的字幕；使用 MKV 输出时，可保留样式字幕和字体附件。
+- **修复 BUG**：修复重启后暂停任务被跳过、最小化恢复后窗口透明或裁切，以及高速流处理中的分片帧数与拼接异常。
+- **任务独立输出目录**：队列中的每个任务都可以分别指定保存位置。
+- **UI 优化**：新增环形队列与任务进度、NVIDIA GPU 实际占用显示和运算流程示意；集中显示当前阶段与设备信息，并优化启动界面。
+- **性能测试调整**：移除第三个虚幻场景，优化空间占用。
+- **安装器启动优化**：优化安装器的启动速度。
 
 ## 下载说明
 
 - 安装版适合常规使用，可直接完成安装与卸载。
 - 免安装版解压后即可运行，适合便携使用或保留多个版本。
 - 国内用户也可以通过[官方网站](https://snowleopard-elysia.github.io/SnowLeopard-Vision/#download)选择夸克、迅雷或百度网盘。
-- 由于 GitHub 单文件大小限制，本次采用分卷下载；不熟悉分卷操作的用户，也可以通过网盘下载完整包。
+- V2.3 的 GitHub 下载提供完整安装包与免安装压缩包，无需分卷或合并。
 
 ## 仓库说明
 
