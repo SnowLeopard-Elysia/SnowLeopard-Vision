@@ -7,27 +7,25 @@
 ![累计下载](https://img.shields.io/github/downloads/SnowLeopard-Elysia/SnowLeopard-Vision/total?style=flat-square&label=累计下载)
 ![使用许可](https://img.shields.io/badge/许可-免费使用-2f855a?style=flat-square)
 
-SnowLeopard Vision 是一款本地 AI 图片与视频增强工具，支持图片超分、视频超分、视频补帧、超分并补帧。
+SnowLeopard Vision 是一款本地 AI 图片、视频增强与音频工具，支持图片超分、视频超分、视频补帧、超分并补帧，以及音频格式转换和视频音频替换。
 
-当前版本：V2.3
+当前版本：V2.4
 
 - [访问官方网站](https://snowleopard-elysia.github.io/SnowLeopard-Vision/)
-- [夸克网盘下载 V2.3（推荐）](https://pan.quark.cn/s/4b1b8e06b73b)
-- [迅雷网盘下载 V2.3](https://pan.xunlei.com/s/VP3a1KAT31f4Uoe-M9WMPjBlA1?pwd=2ymt)
-- [百度网盘下载 V2.3](https://pan.baidu.com/s/1qXj-qNhLWnJbHQ3xTXcT3g?pwd=s7pe)
-- [GitHub 备用下载](https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases/tag/V2.3)
+- [夸克网盘下载 V2.4](https://pan.quark.cn/s/a601a3cc1944)
+- [迅雷网盘下载 V2.4](https://pan.xunlei.com/s/VP4U7TNzqao050T6fiEDQ47AA1?pwd=bg7q)
+- [百度网盘下载 V2.4](https://pan.baidu.com/s/19zzMl3nYYVPPTKQOrLJt_g?pwd=f5sb)
+- [GitHub 下载](https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases/tag/V2.4)
 - [历史版本](https://pan.quark.cn/s/de2aed22cddb)
 
-## V2.3 更新说明
+## V2.4 更新说明
 
-### 该版本鸣谢子贤dalao的友情赞助！
-
-- **保留字幕功能**：默认开启，也可按需关闭。兼容的文本字幕可转换为 MP4 支持的字幕；使用 MKV 输出时，可保留样式字幕和字体附件。
-- **修复 BUG**：修复重启后暂停任务被跳过、最小化恢复后窗口透明或裁切，以及高速流处理中的分片帧数与拼接异常。
-- **任务独立输出目录**：队列中的每个任务都可以分别指定保存位置。
-- **UI 优化**：新增环形队列与任务进度、NVIDIA GPU 实际占用显示和运算流程示意；集中显示当前阶段与设备信息，并优化启动界面。
-- **性能测试调整**：移除第三个虚幻场景，优化空间占用。
-- **安装器启动优化**：优化安装器的启动速度。
+- **扩展超分模型**：新增 x2plus 原生两倍超分、Waifu2x 多款模型，支持图片、视频及超分补帧组合处理。
+- **升级视频处理**：接入流式处理，极大减少了磁盘占用，增强转场保护与重复帧识别。
+- **新增音频工具**：支持音频格式转换、替换视频音频，可调整采样率、声道及适用格式的位深或码率。
+- **完善 HDR 与编码**：扩展高位深处理支持，新增 SDR 转 HDR，重新调整编码质量预设。
+- **更新界面与个性化**：新增多款主题及雪豹定制主题，支持字体切换，升级启动动效和页面设计，新增繁体中文、日语。
+- **扩展显卡功能**：GPU 占用显示增加 AMD、Intel 支持，性能测试新增“等离子涡流”高负载场景。
 
 ## 下载说明
 
