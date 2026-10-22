@@ -15,7 +15,6 @@ SnowLeopard Vision 是一款本地 AI 图片、视频增强与音频工具，支
 - [夸克网盘下载 V2.4](https://pan.quark.cn/s/1607eabcd893)
 - [迅雷网盘下载 V2.4](https://pan.xunlei.com/s/VP4ZL1BorOX0njhRXfJ74h2hA1?pwd=qhr5)
 - [百度网盘下载 V2.4](https://pan.baidu.com/s/1sW7U_kdMBYQmmbIlaX5bkg?pwd=awwr)
-- [GitHub 下载](https://github.com/SnowLeopard-Elysia/SnowLeopard-Vision/releases/tag/V2.4)
 - [历史版本](https://pan.quark.cn/s/b8132991fa29)
 
 ## V2.4 更新说明
