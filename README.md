@@ -1,11 +1,15 @@
-# 雪豹视觉
+<p align="center">
+  <img src="assets/app-cover.png" alt="SnowLeopard Vision" width="80" height="80">
+</p>
 
-<img src="assets/app-cover.png" alt="SnowLeopard Vision" align="right" width="112">
+<h1 align="center">雪豹视觉</h1>
 
-![最新版本](https://img.shields.io/github/v/release/SnowLeopard-Elysia/SnowLeopard-Vision?style=flat-square&label=最新版本)
-![支持系统](https://img.shields.io/badge/Windows-10%20%7C%2011-2376bc?style=flat-square&logo=windows&logoColor=white)
-![累计下载](https://img.shields.io/github/downloads/SnowLeopard-Elysia/SnowLeopard-Vision/total?style=flat-square&label=累计下载)
-![使用许可](https://img.shields.io/badge/许可-免费使用-2f855a?style=flat-square)
+<p align="center">
+  <img src="https://img.shields.io/github/v/release/SnowLeopard-Elysia/SnowLeopard-Vision?style=flat-square&amp;label=最新版本" alt="最新版本">
+  <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-2376bc?style=flat-square&amp;logo=windows&amp;logoColor=white" alt="支持系统">
+  <img src="https://img.shields.io/github/downloads/SnowLeopard-Elysia/SnowLeopard-Vision/total?style=flat-square&amp;label=累计下载" alt="累计下载">
+  <img src="https://img.shields.io/badge/许可-免费使用-2f855a?style=flat-square" alt="使用许可">
+</p>
 
 SnowLeopard Vision 是一款本地 AI 图片、视频增强与音频工具，支持图片超分、视频超分、视频补帧、超分并补帧，以及音频格式转换和视频音频替换。
 
@@ -16,6 +20,10 @@ SnowLeopard Vision 是一款本地 AI 图片、视频增强与音频工具，支
 - [迅雷网盘下载 V2.4](https://pan.xunlei.com/s/VP4ZL1BorOX0njhRXfJ74h2hA1?pwd=qhr5)
 - [百度网盘下载 V2.4](https://pan.baidu.com/s/1sW7U_kdMBYQmmbIlaX5bkg?pwd=awwr)
 - [历史版本](https://pan.quark.cn/s/b8132991fa29)
+
+<p align="center">
+  <img src="assets/readme-showcase-v24.png" alt="官网超分效果对比：左侧为原图，右侧为 Real-CUGAN 4 倍超分结果" width="960">
+</p>
 
 ## V2.4 更新说明
 
