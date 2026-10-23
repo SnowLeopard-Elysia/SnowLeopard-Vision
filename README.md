@@ -5,9 +5,9 @@
 <h1 align="center">雪豹视觉</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/github/v/release/SnowLeopard-Elysia/SnowLeopard-Vision?style=flat-square&amp;label=最新版本" alt="最新版本">
+  <img src="https://img.shields.io/github/v/release/SnowLeopard-Elysia/SnowLeopard-Vision?style=flat-square&amp;label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC" alt="最新版本">
   <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-2376bc?style=flat-square&amp;logo=windows&amp;logoColor=white" alt="支持系统">
-  <img src="https://img.shields.io/github/downloads/SnowLeopard-Elysia/SnowLeopard-Vision/total?style=flat-square&amp;label=累计下载" alt="累计下载">
+  <img src="https://img.shields.io/github/downloads/SnowLeopard-Elysia/SnowLeopard-Vision/total?style=flat-square&amp;label=%E7%B4%AF%E8%AE%A1%E4%B8%8B%E8%BD%BD" alt="累计下载">
   <img src="https://img.shields.io/badge/许可-免费使用-2f855a?style=flat-square" alt="使用许可">
 </p>
 
