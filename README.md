@@ -13,26 +13,26 @@
 
 SnowLeopard Vision 是一款本地 AI 图片、视频增强与音频工具，支持图片超分、视频超分、视频补帧、超分并补帧，以及音频格式转换和视频音频替换。
 
-当前版本：V2.4
+当前版本：V2.5
 
 - [访问官方网站](https://snowleopard-elysia.github.io/SnowLeopard-Vision/)
-- [夸克网盘下载 V2.4](https://pan.quark.cn/s/1607eabcd893)
-- [迅雷网盘下载 V2.4](https://pan.xunlei.com/s/VP4ZL1BorOX0njhRXfJ74h2hA1?pwd=qhr5)
-- [百度网盘下载 V2.4](https://pan.baidu.com/s/1sW7U_kdMBYQmmbIlaX5bkg?pwd=awwr)
-- [历史版本](https://pan.quark.cn/s/b8132991fa29)
+- [夸克网盘下载 V2.5](https://pan.quark.cn/s/389f95c11e67)
+- [迅雷网盘下载 V2.5](https://pan.xunlei.com/s/VP6xmKaEeBoEGwjevMpCgG4xA1?pwd=4ksn)
+- [百度网盘下载 V2.5](https://pan.baidu.com/s/1hTTkcV3mN-8Pm-y_2ci9Yw?pwd=v4ua)
+- [历史版本](https://pan.quark.cn/s/a221d02a4c99)
 
 <p align="center">
   <img src="assets/readme-showcase-v24.png" alt="官网超分效果对比：左侧为原图，右侧为 Real-CUGAN 4 倍超分结果" width="960">
 </p>
 
-## V2.4 更新说明
+## V2.5 更新说明
 
-- **扩展超分模型**：新增 x2plus 原生两倍超分、Waifu2x 多款模型，支持图片、视频及超分补帧组合处理。
-- **升级视频处理**：接入流式处理，极大减少了磁盘占用，增强转场保护与重复帧识别。
-- **新增音频工具**：支持音频格式转换、替换视频音频，可调整采样率、声道及适用格式的位深或码率。
-- **完善 HDR 与编码**：扩展高位深处理支持，新增 SDR 转 HDR，重新调整编码质量预设。
-- **更新界面与个性化**：新增多款主题及雪豹定制主题，支持字体切换，升级启动动效和页面设计，新增繁体中文、日语。
-- **扩展显卡功能**：GPU 占用显示增加 AMD、Intel 支持，性能测试新增“等离子涡流”高负载场景。
+- **新增 Intel QSV 硬件编码**，适用于超分补帧和视频格式转换。
+- **优化补帧**。RIFE 4.x 支持固定帧率与转场保护同时使用，修复部分高分辨率视频补帧闪黑。
+- **改善素材兼容性**。修复部分非整数帧率、可变帧率素材的截短、音画错位和校验误报，改善旋转视频、奇数尺寸及多视频轨处理。
+- **优化任务收尾**。断点续跑可复用更多已完成画面；合并失败可直接重试；格式转换遇到原文件占用时自动另存成品。
+- **修复编码与界面问题**。修正 AMD H.265 10-bit 标记、性能档位保存、启动白闪和设置展开卡顿。
+- **新增哈基米主题和福利页**，优化雪豹主题。同目录覆盖升级时保留个人设置和任务记录。
 
 ## 下载说明
 
